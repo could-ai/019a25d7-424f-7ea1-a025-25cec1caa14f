@@ -42,7 +42,9 @@ class Message {
 
 class _AgentHomePageState extends State<AgentHomePage> {
   final TextEditingController _controller = TextEditingController();
-  final List<Message> _messages = [];
+  final List<Message> _messages = [
+    Message(text: 'Welcome to Sluat.com AI Agent! I can help you deploy stuff. Try typing a command like "deploy my app".', isUser: false),
+  ];
 
   void _sendMessage() {
     if (_controller.text.isNotEmpty) {
